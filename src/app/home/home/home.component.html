@@ -21,22 +21,37 @@
 <!--<div fxLayout="column" fxLayoutGap="5%">-->
 <!--  <div fxLayoutAlign="center center" fxFlex=" 1 1 50%">About Me</div>-->
 <!--  <mat-divider [inset]="true"></mat-divider>-->
-  <div fxLayout="row">
-    <div fxLayoutAlign="center center" fxLayout="column" fxFlex="1 1 50%">
-      <div class="header-text">About Me.</div>
-      <div  class="text-homepage">
-        Hi! My name is Shreya and I am a graduate student at RWTH Aachen University, Germany.
-        I'm majoring is Software Engineering. Apart from Computer Science, I'm passionate about travel.
-        I grew up in many cities in India and spent some formidable years of my life in Dubai, UAE.
-        Interacting with people from different cultures and background has fueled my love for learning new languages and
-        cultures.
-        I hope to share some of my experiences and the work I'm doing through this platform, so that you get to know me
-        a bit better !
+<div fxLayout="row">
+  <div fxLayoutAlign="center center" fxLayout="column" fxFlex="1 1 50%">
+    <div class="header-text">About Me...</div>
+    <div class="text-homepage">
+      Hi! My name is Shreya and I am a graduate student at RWTH Aachen University, Germany.
+      I'm majoring is Software Engineering. Apart from Computer Science, I'm passionate about travel.
+      I grew up in many cities in India and spent some formidable years of my life in Dubai, UAE.
+      Interacting with people from different cultures and background has fueled my love for learning new languages and
+      cultures.
+      I hope to share some of my experiences and the work I'm doing through this platform, so that you get to know me
+      a bit better !
+    </div>
+    <br>
+    <br>
+    <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="2px">
+      <div>
+        <button mat-fab color="white">
+        <img src="/assets/images/github.png" alt="github">
+        </button>
+        <!--        <a type="button"  class="logo-images" ><img src="/assets/logo1.png" alt="linkedin"></a>-->
+      </div>
+      <div>
+        <button mat-fab color="white">
+        <img src="/assets/images/lk.png" alt="linkedin">
+        </button>
       </div>
     </div>
-    <div fxFlex="1 1 50%" fxLayoutAlign="center center">
-      <img class="image" src="/assets/home-pic.jpg" alt="Profile pic">
-    </div>
   </div>
+  <div fxFlex="1 1 50%" fxLayoutAlign="center center" class="image-box">
+    <img class="image" src="/assets/home-pic.jpg" alt="Profile pic">
+  </div>
+</div>
 
 <!--</div>-->

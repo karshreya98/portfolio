@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
 body{
   /*background-image: url("/assets/background.JPG");*/
+  background: white;
 }
 .example-card {
   width: 100%;
@@ -13,7 +14,7 @@ body{
 }
 .header-text
 {
-  font-family:'Homemade Apple', cursive;;
+  font-family:'Homemade Apple', cursive;
   font-size: large;
   color: black;
   size: 50px;
@@ -27,10 +28,12 @@ body{
   margin-left: 10%;
 
 }
+.image-box{
+  margin-top: 5%;
+}
 .image{
   height: auto;
   width: 50%;
-  margin: 10px;
   filter: grayscale(100%);
   /*display: flex;*/
   /*position: center;*/
@@ -45,3 +48,18 @@ body{
 /*  height: 400px;*/
 /*  width: 400px;*/
 /*}*/
+/*.example-button-row button,*/
+/*.example-button-row a {*/
+/*  margin-right: 8px;*/
+/*}*/
+button,.image {
+   background-color: transparent;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+}
+img{
+  margin-top: 1%;
+  height: inherit;
+  width: 30px;
+}

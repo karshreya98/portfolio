@@ -9,6 +9,8 @@ import {SharedModule} from "./shared-module";
 import { HeaderComponent } from './navigation/header/header.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import {ToolbarModule} from "./navigation/toolbar/toolbar.module";
+
 
 
 @NgModule({
@@ -23,6 +25,7 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     RoutingModule,
     HomeModule,
     SharedModule,
+    ToolbarModule,
     BrowserAnimationsModule
   ],
   providers: [],

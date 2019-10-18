@@ -1,3 +1,4 @@
+/*@import '~@ngx-share/button/themes/default/default-theme';*/
 a {
   text-decoration: none;
   color: white;
@@ -14,9 +15,11 @@ a:hover, a:active{
 }
 
 mat-toolbar{
-  border-radius: 3px;
+  /*border-radius: 3px;*/
+  height: 10%;
   background: black;
-  opacity: 50%;
+  margin: auto;
+  /*opacity: 50%;*/
 }
 
 @media(max-width: 959px){
@@ -27,4 +30,12 @@ mat-toolbar{
 .logo-images{
   height: 100%;
   width: 100%;
+}
+img{
+  margin-top: 1%;
+  height: inherit;
+  width: 30px;
+}
+mat-icon-button{
+  color: white;
 }
