@@ -15,10 +15,16 @@ a:hover, a:active{
 
 mat-toolbar{
   border-radius: 3px;
+  background: black;
+  opacity: 50%;
 }
 
 @media(max-width: 959px){
   mat-toolbar{
     border-radius: 0px;
   }
+}
+.logo-images{
+  height: 100%;
+  width: 100%;
 }

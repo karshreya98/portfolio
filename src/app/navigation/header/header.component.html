@@ -1,4 +1,5 @@
-<mat-toolbar color="primary">
+<link ref="stylesheet" href="/frontend/src/theme.scss">
+<mat-toolbar>
   <div fxHide.gt-xs>
     <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon>menu</mat-icon>
@@ -7,10 +8,11 @@
   <div>
     <a routerLink="/home">Owner-Account</a>
   </div>
+  <!--Linkedin-->
   <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
     <ul fxLayout fxLayoutGap="15px" class="navigation-items">
       <li>
-        <a routerLink="/owner">Owner Actions</a>
+<!--        <a type="button"  class="logo-images" ><img src="/assets/logo1.png" alt="linkedin"></a>-->
       </li>
       <li>
         <a routerLink="/account">Account Actions</a>

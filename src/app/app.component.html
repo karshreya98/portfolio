@@ -1,12 +1,34 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav role="navigation">
-    <!--this is a place for us to add side-nav code-->
+<!--<mat-sidenav-container fxLayoutGap="0px">-->
+<!--  <mat-sidenav #sidenav role="navigation">-->
+<!--    &lt;!&ndash;this is a place for us to add side-nav code&ndash;&gt;-->
+<!--    hallo-->
+<!--    <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>-->
+<!--  </mat-sidenav>-->
+<!--  <mat-sidenav-content>-->
+<!--    &lt;!&ndash;in here all the content must reside. We will add a navigation header as well&ndash;&gt;-->
+<!--    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>-->
+<!--      <router-outlet></router-outlet>-->
+<!--  </mat-sidenav-content>-->
+<!--</mat-sidenav-container>-->
+<!--<mat-toolbar color="primary">-->
+<!--  <mat-toolbar-row fxLayout="row" fxLayoutAlign="space-between center">-->
+<!--    <div fxLayout="row" fxLayoutAlign="space-center center">-->
+<!--      <button mat-icon-button (click)="toggle()" class="menu-button">-->
+<!--        <i class="material-icons">menu</i>-->
+<!--      </button>-->
+
+<!--      <span>GIDEON</span>-->
+<!--    </div>-->
+<!--  </mat-toolbar-row>-->
+<!--</mat-toolbar>-->
+<app-header></app-header>
+<mat-sidenav-container [hasBackdrop]="false" class="sidenav-container">
+  <mat-sidenav>
+<!--    <app-sidenav-list></app-sidenav-list>-->
+
   </mat-sidenav>
-  <mat-sidenav-content>
-    <!--in here all the content must reside. We will add a navigation header as well-->
-    <app-header></app-header>
-    <main>
-      <router-outlet></router-outlet>
-    </main>
+
+  <mat-sidenav-content [@sidenavExpand]="opened ? 'content-expanded' : 'content-collapsed'" cdkScrollable >
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

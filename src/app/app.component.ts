@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+  opened = true;
+  mode = 'side';
+  toggle() {
+    this.opened = !this.opened;
+  }
 }

@@ -1,0 +1,47 @@
+/*@font-face {*/
+/*  font-family: "My Custom Font";*/
+/*  src: url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');*/
+/*  !*src: url(https://fonts.googleapis.com/css?family=Homemade) format("truetype");*!*/
+/*}*/
+@import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+body{
+  /*background-image: url("/assets/background.JPG");*/
+}
+.example-card {
+  width: 100%;
+  height: 100%;
+}
+.header-text
+{
+  font-family:'Homemade Apple', cursive;;
+  font-size: large;
+  color: black;
+  size: 50px;
+}
+.text-homepage{
+  font-family: "Courier New", bold;
+  padding: auto;
+  color: black;
+  position: relative;
+  text-align: center;
+  margin-left: 10%;
+
+}
+.image{
+  height: auto;
+  width: 50%;
+  margin: 10px;
+  filter: grayscale(100%);
+  /*display: flex;*/
+  /*position: center;*/
+  /*margin-right: auto;*/
+}
+
+/*.example-header-image {*/
+/*  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');*/
+/*  background-size: cover;*/
+/*}*/
+/*.mat-card-image{*/
+/*  height: 400px;*/
+/*  width: 400px;*/
+/*}*/
