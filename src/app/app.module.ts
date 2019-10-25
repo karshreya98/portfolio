@@ -10,6 +10,8 @@ import { HeaderComponent } from './navigation/header/header.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import {ToolbarModule} from "./navigation/toolbar/toolbar.module";
+import {ProjectsModule} from "./projects/projects.module";
+import {TravelModule} from "./travel/travel.module";
 
 
 
@@ -26,7 +28,9 @@ import {ToolbarModule} from "./navigation/toolbar/toolbar.module";
     HomeModule,
     SharedModule,
     ToolbarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ProjectsModule,
+    TravelModule
   ],
   providers: [],
   bootstrap: [AppComponent]

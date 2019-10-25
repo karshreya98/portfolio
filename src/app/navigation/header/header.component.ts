@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import {SharedModule} from "../../shared-module";
-
+import {ProjectsComponent} from "../../projects/projects/projects.component";
 
 @Component({
   selector: 'app-header',

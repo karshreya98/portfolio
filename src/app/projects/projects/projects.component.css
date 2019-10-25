@@ -1,0 +1,13 @@
+.cards{
+  margin: 5%;
+}
+.example-card {
+  width: 400px;
+  height: auto;
+  padding: 5%;
+  margin-bottom: 10px;
+
+}
+img{
+   filter: grayscale(100%);
+ }
