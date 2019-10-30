@@ -1,13 +1,15 @@
-.cards{
-  margin: 5%;
+img {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 5%;
+  /*filter: grayscale(100%);*/
 }
 .example-card {
-  width: 400px;
-  height: auto;
-  padding: 5%;
-  margin-bottom: 10px;
-
+  width: 23%;
+  margin-bottom: 2%;
+  font-family: Arial;
 }
-img{
-   filter: grayscale(100%);
- }
+body {
+  min-height: 100%;
+  width: 100%;
+}

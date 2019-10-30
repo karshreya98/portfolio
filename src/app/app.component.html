@@ -21,12 +21,20 @@
 <!--    </div>-->
 <!--  </mat-toolbar-row>-->
 <!--</mat-toolbar>-->
+<!--[hasBackdrop]="false"-->
 <app-header></app-header>
-<mat-sidenav-container [hasBackdrop]="false" class="sidenav-container">
+<mat-sidenav-container  class="sidenav-container">
   <mat-sidenav>
 <!--    <app-sidenav-list></app-sidenav-list>-->
+    </mat-sidenav>
 
-  </mat-sidenav>
+    <div [ngStyle]="{'display' : (screenWidth > 840) ? 'none' : 'block'}">
+      <button type="button" md-button (click)="sidenav.open()">
+        Toggle sidenav when display is block
+      </button>
+    </div>
+
+<!--  </mat-sidenav>-->
 
   <mat-sidenav-content [@sidenavExpand]="opened ? 'content-expanded' : 'content-collapsed'" cdkScrollable >
     <router-outlet></router-outlet>

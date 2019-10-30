@@ -1,23 +1,68 @@
-/*@font-face {*/
-/*  font-family: "My Custom Font";*/
-/*  src: url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');*/
-/*  !*src: url(https://fonts.googleapis.com/css?family=Homemade) format("truetype");*!*/
-/*}*/
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
-body{
-  /*background-image: url("/assets/background.JPG");*/
-  background: white;
-}
-.example-card {
-  width: 100%;
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
   height: 100%;
+  width: 100%;
+  background-image: url("../../../assets/images/backdrop.JPG");
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.content{
+  height: inherit;
+  width: inherit;
+}
+.example-card{
+ width: 50%;
+  height: 80%;
 }
 .header-text
 {
   font-family:'Homemade Apple', cursive;
   font-size: large;
   color: black;
-  size: 50px;
+  /*size: 50px;*/
+  /*width: inherit;*/
+  /*height: inherit;*/
 }
 .text-homepage{
   font-family: "Courier New", bold;
@@ -25,41 +70,19 @@ body{
   color: black;
   position: relative;
   text-align: center;
-  margin-left: 10%;
+  /*width: inherit;*/
+  /*height: inherit;*/
+  /*margin-left: 10%;*/
 
 }
-.image-box{
-  margin-top: 5%;
-}
-.image{
-  height: auto;
+.mat-elevation-z12{
   width: 50%;
-  filter: grayscale(100%);
-  /*display: flex;*/
-  /*position: center;*/
-  /*margin-right: auto;*/
-}
-
-/*.example-header-image {*/
-/*  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');*/
-/*  background-size: cover;*/
-/*}*/
-/*.mat-card-image{*/
-/*  height: 400px;*/
-/*  width: 400px;*/
-/*}*/
-/*.example-button-row button,*/
-/*.example-button-row a {*/
-/*  margin-right: 8px;*/
-/*}*/
-button,.image {
-   background-color: transparent;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
+  height: 80%;
+  padding: auto;
 }
 img{
-  margin-top: 1%;
   height: inherit;
-  width: 30px;
+  width: auto;
+  border: black;
 }
+

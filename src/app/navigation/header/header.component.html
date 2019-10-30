@@ -1,16 +1,30 @@
 <mat-toolbar>
-  <div fxFlex fxLayout fxLayoutAlign="center center" fxHide.xs>
-    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+  <div fxFlex fxLayout fxHide.xs fxLayoutAlign="flex-start">
+    <ul fxLayout fxLayoutGap="15px" class="navigation-items" fxLayoutAlign="center center">
       <li>
-        <a routerLink="/home" style="font-family:'Courier New'">Home.</a>
+        <a routerLink="/home" style="font-family:'Courier New'">Home</a>
       </li>
       <li>
-        <a routerLink="/projects" style="font-family:'Courier New'">Projects.</a>
+        <a routerLink="/projects" style="font-family:'Courier New'">Projects</a>
       </li>
       <li>
-        <a routerLink="/travel" style="font-family:'Courier New'">Travel.</a>
+        <a routerLink="/travel" style="font-family:'Courier New'">Travel</a>
       </li>
 
     </ul>
+  </div>
+  <div fxFlex fxLayout fxHide.xs fxLayoutAlign="flex-end">
+  <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+    <li>
+              <a color="white" href="https://linkedin.com/in/shreya-kar-ba193196">
+              <img src="/assets/images/lk.png" alt="linkedin">
+              </a>
+    </li>
+    <li>
+      <a color="white" href="https://github.com/karshreya98">
+        <img src="/assets/images/github.png" alt="linkedin">
+      </a>
+    </li>
+  </ul>
   </div>
 </mat-toolbar>

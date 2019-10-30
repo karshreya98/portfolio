@@ -16,6 +16,7 @@ import {
 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CommonModule } from '@angular/common';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 
 @NgModule({
@@ -63,7 +64,8 @@ import { CommonModule } from '@angular/common';
     ScrollingModule,
     PortalModule,
     FlexLayoutModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule
   ],
   exports: [
     A11yModule,
@@ -109,7 +111,8 @@ import { CommonModule } from '@angular/common';
     ScrollingModule,
     PortalModule,
     FlexLayoutModule,
-    CommonModule
+    CommonModule,
+    BrowserAnimationsModule
   ]
 })
 export class SharedModule {}
